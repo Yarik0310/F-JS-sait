@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="image/Group 1 (3).ico">
+    <link href="https://fonts.cdnfonts.com/css/proxima-nova-2" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "JS/TABS.js"></script>
+    <title>SHIFTON</title>
+</head>
+<body>
+    <nav class="container">
+        <div class="navbar">
+            <div class="nav-logo">
+                <img id="logo" src="img/logo-shifton.png" alt="">
+            </div>
+            <img class="nav-burger" src="img/Бургер.png" alt="">
+            <div class="nav-set">
+                <div class="nav-txt">
+                    <p class="nav-txt_txt">Главная</p>
+                    <p class="nav-txt_txt">тарифы</p>
+                    <p class="nav-txt_txt">возможности</p>
+                    <p class="nav-txt_txt">блог</p>
+                    <p class="nav-txt_txt">чаво</p>
+                    <p class="nav-txt_txt">вход</p>
+                </div>
+                <button class="nav-but" id="registerBtn">Регистрация</button>
+                <button class="nav-but2" id="registerBtn2"><img src="img/Бургер.png"></button>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close"><img src="img/Group 130.png"></span>
+                        <div class="modal_nav">
+                            <p class="modal_txt">главная</p>
+                            <p class="modal_txt">тарифы</p>
+                            <p class="modal_txt">возможности</p>
+                            <p class="modal_txt">блог</p>
+                            <p class="modal_txt">чаво</p>
+                            <p class="modal_txt">вход</p>
+                            <button class="nav-but">Регистрация</button>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById("myModal");
+
+                    // Get the button that opens the modal
+                    var btn = document.getElementById("registerBtn");
+                    var btn2 = document.getElementById("registerBtn2");
+
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+
+                    // When the user clicks the button, open the modal
+                    btn.onclick = function() {
+                        modal.style.display = "block";
+                    }
+                    btn2.onclick = function() {
+                        modal.style.display = "block";
+                    }
+
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() {
+                        modal.style.display = "none";
+                    }
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </nav>
+    <section class="container back-pct">
+        <div class="enter-block">
+            <h2 class="H-txt">Автоматизированное составление <br> рабочих расписаний онлайн</h2>
+            <p class="sm-txt">Экономия времени и денег</p>
+            <p class="sm-txt">Грамотное распределение рабочей нагрузки</p>
+            <p class="sm-txt">Построение оптимального сменного рабочего <br> расписания для любого количества сотрудников</p>
+            <button class="green-but">Попробовать бесплатно</button>
+        </div>
+    </section>
+    <section id="sld" class="container">
+        <div class="H-sl_set"><h1 class="H-sl">Возможности Shifton</h1></div>
+        <div class="container">
+            <div class="carousel">
+                <div class="carousel-window">
+                    <div class="carousel-slides">
+                        <div class="carousel-item">
+                            <img src="img/фон слайдер.jpg" alt="">
+                            <div class="slide_n_row">
+                                <div id="sl_n1" class="slide_nav">
+                                    <img id="sli" class="slide_icon" src="img/time-management 1.png">
+                                    <h2 class="slide_main">Распределяй работу</h2>
+                                    <p class="slide_sm-head">Планирование смен</p>
+                                    <ul class="slide_ul" type="disc">
+                                        <li class="slide_sm-txt">Настраиваемые шаблоны смен</li>
+                                        <li class="slide_sm-txt">Обмен сменами между сотрудниками</li>
+                                        <li class="slide_sm-txt">Праздничные и особые дни</li>
+                                        <li class="slide_sm-txt">Свободные смены</li>
+                                        <li class="slide_sm-txt">Соблюдение трудового законодательства</li>
+                                        <li class="slide_sm-txt">Синхронизация с календарем</li>
+                                    </ul>
+                                    <button class="green-but2">Подробнее</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/фон слайдер.jpg" alt="">
+                            <div class="slide_n_row">
+                                <div id="sl_n2" class="slide_nav">
+                                    <img id="sli2" class="slide_icon" src="img/time-management 2.png">
+                                    <h2 class="slide_main">Управляй и контролируй</h2>
+                                    <p class="slide_sm-head">Контроль сотрудников</p>
+                                    <ul id="ul2" class="slide_ul" type="disc">
+                                        <li class="slide_sm-txt">Назначение задач</li>
+                                        <li class="slide_sm-txt">Создание контрольных списков</li>
+                                        <li class="slide_sm-txt">Отслеживание опозданий</li>
+                                        <li class="slide_sm-txt">Сравнение запланированных и завершенных задач</li>
+                                        <li class="slide_sm-txt">Отчеты об отработанных часах, зарплатах сотрудников и отпускным/больничным дням</li>
+                                    </ul>
+                                    <button id="b2" class="green-but2">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/фон слайдер.jpg" alt="">
+                            <div class="slide_n_row">
+                                <div id="sl_n3" class="slide_nav">
+                                    <img id="sli3" class="slide_icon" src="img/time-management 3.png">
+                                    <h2 class="slide_main">Масштабируй</h2>
+                                    <p class="slide_sm-head">
+                                        Интеграции и неограниченный доступ
+                                    </p>
+                                    <ul type="disc">
+                                        <li class="slide_sm-txt">Возможность интеграции</li>
+                                        <li class="slide_sm-txt">Доступ 24/7 с любого устройства с выходом в Интернет</li>
+                                        <li class="slide_sm-txt">Система уведомлений</li>
+                                        <li class="slide_sm-txt">Универсальность</li>
+                                    </ul>
+                                    <button id="b2" class="green-but2">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/фон слайдер.jpg" alt="">
+                            <div class="slide_n_row">
+                                <div id="sl_n4" class="slide_nav">
+                                    <img id="sli4" class="slide_icon" src="img/time-management 4.png">
+                                    <h2 class="slide_main">Планируй и составляй прогнозы</h2>
+                                    <p class="slide_sm-head">Оценки и прогнозы</p>
+                                    <ul type="disc">
+                                        <li class="slide_sm-txt">Планирование перерывов</li>
+                                        <li class="slide_sm-txt">Планирование отпусков</li>
+                                        <li class="slide_sm-txt">Безопасное хранение документов</li>
+                                    </ul>
+                                    <button id="b3" class="green-but2">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                <a href="#" class="carousel-prev">
+                    <span class="carousel-prev-icon">&lt;</span>
+                </a>
+                <a href="#" class="carousel-next">
+                    <span class="carousel-next-icon">&gt;</span>
+                </a>
+            </div>
+        </div>
+        <script>
+            class Slider {
+    constructor(slider, autoplay = true) {
+        // элемент div.carousel
+        this.slider = slider;
+        // все кадры (слайды)
+        this.allFrames = slider.querySelectorAll('.carousel-item');
+        // цепочка кадров
+        this.frameChain = slider.querySelector('.carousel-slides');
+        // кнопка «вперед»
+        this.nextButton = slider.querySelector('.carousel-next');
+        // кнопка «назад»
+        this.prevButton = slider.querySelector('.carousel-prev');
+
+        this.index = 0; // индекс кадра, который сейчас в окне просмотра
+        this.length = this.allFrames.length; // сколько всего есть кадров
+        this.autoplay = autoplay; // включить автоматическую прокрутку?
+        this.paused = null; // чтобы можно было выключать автопрокрутку
+
+        this.init(); // инициализация слайдера
+    }
+
+    init() {
+        this.dotButtons = this.dots(); // создать индикатор текущего кадра
+
+        // все кадры должны быть одной ширины, равной ширине окна просмотра;
+        // если кадров три, то ширина каждого кадра будет 100/3 = 33.33333%
+        // от ширины контейнера .carousel-slides, то есть 900 пикселей
+        this.allFrames.forEach(frame => frame.style.width = 100/this.length + '%');
+        // ширина цепочки кадров должна равна ширине всех кадров, то есть
+        // 900*3 = 2700 пикселей; но удобнее задать в процентах от родителя,
+        // если кадров три, то ширина контейнера кадров будет 100*3 = 300%
+        this.frameChain.style.width = 100 * this.length + '%';
+
+        this.nextButton.addEventListener('click', event => { // клик по кнопке «вперед»
+            event.preventDefault();
+            this.next();
+        });
+
+        this.prevButton.addEventListener('click', event => { // клик по кнопке «назад»
+            event.preventDefault();
+            this.prev();
+        });
+
+        // клики по кнопкам индикатора текущего кадра
+        this.dotButtons.forEach(dot => {
+            dot.addEventListener('click', event => {
+                event.preventDefault();
+                const index = this.dotButtons.indexOf(event.target);
+                if (index === this.index) return;
+                this.goto(index);
+            });
+        });
+
+        if (this.autoplay) { // включить автоматическую прокрутку?
+            this.play();
+            // когда мышь над слайдером — останавливаем автоматическую прокрутку
+            this.slider.addEventListener('mouseenter', () => clearInterval(this.paused));
+            // когда мышь покидает пределы слайдера — опять запускаем прокрутку
+            this.slider.addEventListener('mouseleave', () => this.play());
+        }
+    }
+
+    // перейти к кадру с индексом index
+    goto(index) {
+        // изменить текущий индекс...
+        if (index > this.length - 1) {
+            this.index = 0;
+        } else if (index < 0) {
+            this.index = this.length - 1;
+        } else {
+            this.index = index;
+        }
+        // ...и выполнить смещение
+        this.move();
+    }
+
+    // перейти к следующему кадру
+    next() {
+        this.goto(this.index + 1);
+    }
+
+    // перейти к предыдущему кадру
+    prev() {
+        this.goto(this.index - 1);
+    }
+
+    // рассчитать и выполнить смещение
+    move() {
+        // на сколько нужно сместить, чтобы нужный кадр попал в окно
+        const offset = 100/this.length * this.index;
+        this.frameChain.style.transform = `translateX(-${offset}%)`;
+        this.dotButtons.forEach(dot => dot.classList.remove('active'));
+        this.dotButtons[this.index].classList.add('active');
+    }
+
+    // запустить автоматическую прокрутку
+    play() {
+        this.paused = setInterval(() => this.next(), 3000);
+    }
+
+    // создать индикатор текущего слайда
+    dots() {
+        const ol = document.createElement('ol');
+        ol.classList.add('carousel-indicators');
+        const children = [];
+        for (let i = 0; i < this.length; i++) {
+            let li = document.createElement('li');
+            if (i === 0) li.classList.add('active');
+            ol.append(li);
+            children.push(li);
+        }
+        this.slider.prepend(ol);
+        return children;
+    }
+}
+                    document.addEventListener('DOMContentLoaded', function() {
+        new Slider(document.querySelector('.carousel'));
+    });
+        </script>
+        </div>
+    </section>
+    <section id="ack" class="container">
+        <div class="H-sl_set"><h1 class="H-sl">Возможности Shifton</h1></div>
+        <div class="Accord-block">
+            <!-- Accordions -->
+            <button class="accordion">Распределяй работу</button>
+            <div id="p1" class="panel">
+                <img class="slide_icon" src="img/time-management 1.png">
+                <p class="slide_sm-head">Планирование смен</p>
+                <ul type="disc">
+                    <li class="slide_sm-txt">Настраиваемые шаблоны смен</li>
+                    <li class="slide_sm-txt">Обмен сменами между сотрудниками</li>
+                    <li class="slide_sm-txt">Праздничные и особые дни</li>
+                    <li class="slide_sm-txt">Свободные смены</li>
+                    <li class="slide_sm-txt">Соблюдение трудового законодательства</li>
+                    <li class="slide_sm-txt">Синхронизация с календарем</li>
+                </ul>
+                <button class="green-but2">Подробнее</button>
+            </div>
+            <button class="accordion">Управляй и контролируй</button>
+            <div id="p2" class="panel">
+                <img class="slide_icon" src="img/time-management 2.png">
+                <p class="slide_sm-head">Контроль сотрудников</p>
+                <ul type="disc">
+                    <li class="slide_sm-txt">Назначение задач</li>
+                    <li class="slide_sm-txt">Создание контрольных списков</li>
+                    <li class="slide_sm-txt">Отслеживание опозданий</li>
+                    <li class="slide_sm-txt">Сравнение запланированных и завершенных задач</li>
+                    <li class="slide_sm-txt">Отчеты об отработанных часах, зарплатах сотрудников и отпускным/больничным дням</li>
+                </ul>
+                <button class="green-but2">Подробнее</button>
+            </div>
+            <button class="accordion">Масштабируй</button>
+            <div id="p3" class="panel">
+                <img class="slide_icon" src="img/time-management 3.png">
+                <p class="slide_sm-head">
+                    Интеграции и неограниченный доступ
+                </p>
+                <ul type="disc">
+                    <li class="slide_sm-txt">Возможность интеграции</li>
+                    <li class="slide_sm-txt">Доступ 24/7 с любого устройства с выходом в Интернет</li>
+                    <li class="slide_sm-txt">Система уведомлений</li>
+                    <li class="slide_sm-txt">Универсальность</li>
+                </ul>
+                <button class="green-but2">Подробнее</button>
+            </div>
+            <button class="accordion">Планируй и составляй прогнозы</button>
+            <div id="p4" class="panel">
+                <img class="slide_icon" src="img/time-management 4.png">
+                <p class="slide_sm-head">Оценки и прогнозы</p>
+                <ul type="disc">
+                    <li class="slide_sm-txt">Планирование перерывов</li>
+                    <li class="slide_sm-txt">Планирование отпусков</li>
+                    <li class="slide_sm-txt">Безопасное хранение документов</li>
+                </ul>
+                <button class="green-but2">Подробнее</button>
+            </div>
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+
+                for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.display === "block") {
+                            panel.style.display = "none";
+                        } else {
+                            panel.style.display = "block";
+                        }
+                    });
+                }
+            </script>
+        </div>
+    </section>
+    <section class="container">
+        <!-- Tab links -->
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'London')">
+                Автоматизированное создание онлайн расписаний
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">Оптимизация командной работы</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Управление сменами и перерывами</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="London" class="tabcontent">
+            <div class="tabcontent1">
+                <div class="tab_nav-txt">
+                    <p class="tab-txt_sm">Shifton поможет компании сэкономить средства, минимизировав время простоев в работе. Система автоматически назначает смены сотрудникам, обеспечивая плавный и бесперебойный рабочий процесс на предприятии.</p>
+                    <button class="tab-but1">Начать работу</button>
+                </div>
+                <div class="tab_nav-img">
+                    <img class="tab-img" src="img/автоматизированное.png">
+                </div>
+            </div>
+        </div>
+        <div id="Paris" class="tabcontent ">
+            <div class="tabcontent2">
+                <div class="tab_nav-txt2">
+                    <p class="tab-txt_sm">
+                        Создавайте комфортные рабочие графики с учетом личных обстоятельств сотрудников.
+                        Работники оценят возможность обмениваться сменами или перерывами с коллегами, а в случае замены сотрудника Shifton мгновенно скорректирует любой график.
+                    </p>
+                    <button class="tab-but2">Попробовать бесплатно</button>
+                </div>
+                <div class="tab_nav-img">
+                    <img class="tab-img2" src="img/Оптимизация.png">
+                </div>
+            </div>
+        </div>
+
+        <div id="Tokyo" class="tabcontent">
+            <div class="tabcontent1">
+                <div class="tab_nav-txt">
+                    <p class="tab-txt_sm">
+                        Создавайте комфортные рабочие графики с учетом личных обстоятельств сотрудников.
+                        Работники оценят возможность обмениваться сменами или перерывами с коллегами, а в случае замены сотрудника Shifton мгновенно скорректирует любой график.
+                    </p>
+                    <button class="tab-but3">Попробовать бесплатно</button>
+                </div>
+                <div class="tab_nav-img">
+                    <img class="tab-img" src="img/Управление.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="last-block">
+            <div class="up-ln">
+                <p class="up-ln_txt">Возможности</p>
+                <p id="Fir" class="up-ln_txt">Блог</p>
+                <p class="up-ln_txt">ЧАВО</p>
+            </div>
+            <img class="line" src="img/Rectangle 25.png" alt="">
+            <div class="und-ln">
+                <p class="und-ln_txt">Copyright 2017-2021, Shifton. All rights reserved.</p>
+                <p class="und-ln_txt">Privacy Policy  |  Terms of Use  |  Сookies</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
