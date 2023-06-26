@@ -1,0 +1,4 @@
+—сылка на макет в фигме:
+https://www.figma.com/file/CUL18bRbQBXxSOi9N6A8qU/%D0%92%D0%B5%D1%80%D1%81%D1%82%D0%BA%D0%B0-JS?type=design&node-id=0%3A1&t=FPjRe2cc5uD0Z2MZ-1
+—сылка на репозиторий в гитхабе:
+https://github.com/Yarik0310/github.io.git
